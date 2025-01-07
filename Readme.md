@@ -192,11 +192,11 @@ Reference answer:
 > 
 > #3 Make a good plan when generating the data. Think about how to make it consistent, straightforward, reproducible and easy to process.
 
-### 4 Extract
+# 4. Extract
 
 We can "group" the patterns and "capture" the matches.
 
-#### (1) Single group
+### (1) Single group
 
 Print out the cities in US:
 	Edmonton, Canada
@@ -212,7 +212,7 @@ Print out the cities in US:
 Code:
 	(.*),\sUS\b
 
-#### (2) Multiple groups
+### (2) Multiple groups
 
 Get the first name and last name
 
@@ -230,10 +230,10 @@ Code:
  	Emma got C in English, A in Chemistry, and B in History.
   	Tony got B in French, B in Maths, and D in Arts.
 
-### 5 Report
+# 5. Report
 Open [https://colab.research.google.com/]() in your browser, login with your google account.
 
-#### (1) Exact match
+### (1) Exact match
 
 	import re
 	input = "University of Alberta"
@@ -245,7 +245,7 @@ Open [https://colab.research.google.com/]() in your browser, login with your goo
  	print(output.start())
   	print(output.end())
 
-#### (2) Pattern match
+### (2) Pattern match
 
 	import re
 	cities = ["Vancouver BC", "Calgary AB", "Edmonton Alberta", "Toronto ON"]
@@ -256,7 +256,7 @@ Open [https://colab.research.google.com/]() in your browser, login with your goo
 		else:
 			print(city+" is not in Alberta")
 
-#### (3) Capture the information by grouping
+### (3) Capture the information by grouping
 
 Get the city name and the province: "Vancouver BC", "Calgary AB", "Edmonton Alberta", "Toronto ON"
 
@@ -273,7 +273,7 @@ Get the city name and the province: "Vancouver BC", "Calgary AB", "Edmonton Albe
   	Tony got B in French, B in Maths, and D in Arts.
 
 
-#### (4) Find all matches
+### (4) Find all matches
 
 For the last example about students' grades in different courses, what if some students take 2 or 4 or more courses. For example:
 
@@ -299,9 +299,9 @@ We need to use another function _re.finditer_ to capture all matches.
 			print(course + ":" + grade)
 			
 
-###  6 Modify
+#  6. Modify
 
-#### (1) Change format
+### (1) Change format
 
 Change date format from 01/24/2025 to 2025-01-24
 
@@ -311,7 +311,7 @@ Change date format from 01/24/2025 to 2025-01-24
 	print(output)
 
 
-#### (2) Convert units: cm to mm
+### (2) Convert units: cm to mm
 
 	import re
 	input_text = "The iPhone 16 features a 6.1-inch OLED display. It is 14.76 cm long, 7.16 cm high, and 0.78 cm deep."
@@ -323,14 +323,14 @@ Change date format from 01/24/2025 to 2025-01-24
 	output_text = re.sub(pattern, convert_to_mm, input_text)
 	print(output_text)
 
-### Practice
+## Practice
 
-#### Question 1:
+### Question 1:
 A start codon is the first codon in a messenger RNA (mRNA) transcript that is translated into a protein by a ribosome. The start codon is typically ATG, but can be TTG and GTG in _E.coli_. Use regular expression to find all start codon in the following DNA sequence.
 
 	GATCTGACTAGACATCAGGCCCGGATGCAAC
 
-#### Question 2:
+### Question 2:
 Use python code and regular expression to change the author names:
 
 > Original: Tom Jerry Li
