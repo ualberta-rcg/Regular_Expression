@@ -149,6 +149,17 @@ Practice: can you find all cities from USA?
 
 Reference answer:
 
+
+<details>
+  <summary>Click to see the answer!</summary>
+  
+  ,\s(U\.?S\.?A?|United States)\b
+  
+  - Bullet points
+  - Code blocks
+  - Links
+</details>
+
 	,\s(U\.?S\.?A?|United States)\b
 
 
