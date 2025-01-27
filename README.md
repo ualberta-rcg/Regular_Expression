@@ -338,24 +338,25 @@ Use python code and regular expression to change the author names:
 
 > Changed: T.J. Li
 
-## Survey
-Click [here](https://forms.gle/GDg848Jk4sRr6LaN6)
+## Extended materials
 
-## Tutorials
+#### Tutorials
 
 * [http://www.rexegg.com/]()
 * [http://www.regular-expressions.info/]()
 * [https://www.sitepoint.com/demystifying-regex-with-practical-examples/]()
 * [https://www.loggly.com/blog/regexes-the-bad-better-best/]()
 
-## _The_ Book
+#### _The_ Book
 
 * [http://shop.oreilly.com/product/9781565922570.do]()
 
-## Online Testers
+#### Online Testers
 * [https://regex101.com/]() 
 * [http://www.regexpal.com/]() = [http://www.regextester.com/]()
 * [http://regexr.com/]()
 * [http://myregexp.com/]()
 
-### Paste the markdown for the lesson into the shared Google Doc.
+## Survey
+Click [here](https://forms.gle/GDg848Jk4sRr6LaN6)
+
