@@ -175,7 +175,9 @@ Code:
 
 	[A-Z][0-9][A-Z]\s?[0-9][A-Z][0-9]
 
-Practice: can you find all cities from USA?
+#### Practice: 
+
+Find all cities from USA:
 
 	Edmonton, Canada
 	New York City, USA
@@ -186,8 +188,6 @@ Practice: can you find all cities from USA?
  	Los Angeles, U.S.
   	Chicago, U.S.A
    	Seattle, US
-
-Reference answer:
 
 
 <details>
@@ -262,7 +262,9 @@ Code:
 
  	^(\w{1,}) .* (\w{0,})$
 
-> Practice: get the students' names, grades and courses:
+#### Practice: 
+
+Get the students' names, grades and courses:
 
 	John got A in Maths, B in Arts, and C in Physics.
  	Emma got C in English, A in Chemistry, and B in History.
@@ -311,11 +313,31 @@ Get the city name and the province: "Vancouver BC", "Calgary AB", "Edmonton Albe
 		output=re.search(r"(\w{1,}) (\w{1,})", city)
 		print("City:" + output.group(1) + ", Province:" + output.group(2))
 
-> Practice: get the names, grades and courses of those students who _don't_ take Maths: 
+#### Practice: 
+
+Get the students' names and their grades in Math:
 
 	John got A in Maths, B in Arts, and C in Physics.
- 	Emma got C in English, A in Chemistry, and B in History.
+ 	Emma got C in English, A in Chemistry, and B in Math.
   	Tony got B in French, B in Maths, and D in Arts.
+
+You can start with:
+
+	import re
+	grades = ["John got A in Maths, B in Arts, and C in Physics.", "Emma got C in English, A in Chemistry, and B in Math.", "Tony got B in French, B in Maths, and D in Arts."]
+	for grade in grades:
+ 		
+<details>
+  <summary>Fill the regular expression here. Click to see the answer!</summary>
+  
+	```	output=re.search(r"^(\w{1,}) got .* (\w) in Math", grade)```
+  
+</details> 
+
+		print("output.group(1)
+
+ 
+
 
 
 ### (4) Find all matches
