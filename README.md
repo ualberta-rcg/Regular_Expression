@@ -68,17 +68,7 @@ What about a different postal code? Type your own postal code into the `TEST STR
 
 	M5W1E6
 	
-It won't detect this new postal code. Why? Because we've been _very_ specific, providing a regular expression that will match `A1A1A1` exactly. We can see this by opening the EXPLANATION PANEL to the right of the REGULAR EXPRESSION box.  It will provide you with an English language explanation of what your expression is saying in regex syntax.  It won't always be perfect but it can be quite helpful when trying to understand what is happening.  In this case we are told that:
-
->A1A1A1 matches the characters A1A1A1 literally (case sensitive)
-
->A matches the character A with index 6510 (4116 or 1018) literally (case sensitive)
-
->1 matches the character 1 with index 4910 (3116 or 618) literally (case sensitive)
-
->A matches the character A with index 6510 (4116 or 1018) literally (case sensitive)
-
->Etc.
+It won't detect this new postal code. Why? Because we've been _very_ specific, providing a regular expression that will match `A1A1A1` exactly. We can see this by opening the EXPLANATION PANEL to the right of the REGULAR EXPRESSION box.  
 
 
 ### (2) Variable Pattern match
