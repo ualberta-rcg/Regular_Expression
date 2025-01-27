@@ -41,9 +41,9 @@ These are  three things you need to know to be successful with regular expressio
 
 # 2. Setup
 
-We'll be using both [https://regex101.com/]() and [https://colab.research.google.com/]() so each participant should have each open in a separate tab.
+We'll be using both [https://regex101.com/](https://regex101.com/) and [https://colab.research.google.com/](https://colab.research.google.com/) so each participant should have each open in a separate tab.
 
-#### Everyone should open browser and point it to [https://regex101.com/]() and [https://colab.research.google.com/]().
+#### Everyone should open browser and point it to [https://regex101.com/](https://regex101.com/) and [https://colab.research.google.com/](https://colab.research.google.com/).
 
 
 # 3. Search
