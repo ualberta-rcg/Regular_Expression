@@ -318,27 +318,28 @@ Get the city name and the province: "Vancouver BC", "Calgary AB", "Edmonton Albe
 Get the students' names and their grades in Math:
 
 	John got A in Maths, B in Arts, and C in Physics.
- 	Emma got C in English, A in Chemistry, and B in Math.
+ 	Emma got C in English, A in Chemistry, and B in Maths.
   	Tony got B in French, B in Maths, and D in Arts.
 
 You can start with:
 
 	import re
-	grades = ["John got A in Maths, B in Arts, and C in Physics.", "Emma got C in English, A in Chemistry, and B in Math.", "Tony got B in French, B in Maths, and D in Arts."]
+	grades = ["John got A in Maths, B in Arts, and C in Physics.", "Emma got C in English, A in Chemistry, and B in Maths.", "Tony got B in French, B in Maths, and D in Arts."]
 	for grade in grades:
  		
 <details>
   <summary>Fill the regular expression here. Click to see the answer!</summary>
   
-	```	output=re.search(r"^(\w{1,}) got .* (\w) in Math", grade)```
+	```	output=re.search(r"^(\w{1,}) got.*(\w) in Maths", grade)```
   
 </details> 
 
-		print("output.group(1)
+
+And then report by:
+
+		print("output.group(1)" + "'s Math grade is "+output.group(2))
 
  
-
-
 
 ### (4) Find all matches
 
@@ -390,39 +391,57 @@ Change date format from 01/24/2025 to 2025-01-24
 	output_text = re.sub(pattern, convert_to_mm, input_text)
 	print(output_text)
 
+#### Practice
 
-## Practice
+Use the python regular expression to standardize the phone number:
 
-### Question 1:
-A start codon is the first codon in a messenger RNA (mRNA) transcript that is translated into a protein by a ribosome. The start codon is typically ATG, but can be TTG and GTG in _E.coli_. Use regular expression to find all start codon in the following DNA sequence.
+Convert:
+
+	(604)123-1111
+
+to:
+
+	604-123-1111
+  
+
+Change "pattern" and "replacement" below with your answers:
+
+	import re
+ 	re.sub(r"pattern", r"replacement", "(604)123-1111")
+
+  
+<details>
+  <summary>Fill the regular expression here. Click to see the answer!</summary>
+  
+	```	re.sub(r"^\((\d{3})\)",r"\1-","(604)123-1111")```
+  
+</details> 
+
+#### Practice (more complicated)
+
+A start codon is the first codon in a messenger RNA (mRNA) transcript that is translated into a protein by a ribosome. The start codon is typically ATG, but can be TTG and GTG in _E.coli_. Use [regular expression 101](https://regex101.com/) to find all start codon in the following DNA sequence.
 
 	GATCTGACTAGACATCAGGCCCGGATGCAAC
 
-### Question 2:
-Use python code and regular expression to change the author names:
-
-> Original: Tom Jerry Li
-
-> Changed: T.J. Li
 
 ## Extended materials
 
 #### Tutorials
 
-* [http://www.rexegg.com/]()
-* [http://www.regular-expressions.info/]()
-* [https://www.sitepoint.com/demystifying-regex-with-practical-examples/]()
-* [https://www.loggly.com/blog/regexes-the-bad-better-best/]()
+* [http://www.rexegg.com/](http://www.rexegg.com/)
+* [http://www.regular-expressions.info/](http://www.regular-expressions.info/)
+* [https://www.sitepoint.com/demystifying-regex-with-practical-examples/](https://www.sitepoint.com/demystifying-regex-with-practical-examples/)
+* [https://www.loggly.com/blog/regexes-the-bad-better-best/](https://www.loggly.com/blog/regexes-the-bad-better-best/)
 
 #### _The_ Book
 
-* [http://shop.oreilly.com/product/9781565922570.do]()
+* [http://shop.oreilly.com/product/9781565922570.do](http://shop.oreilly.com/product/9781565922570.do)
 
 #### Online Testers
-* [https://regex101.com/]() 
-* [http://www.regexpal.com/]() = [http://www.regextester.com/]()
-* [http://regexr.com/]()
-* [http://myregexp.com/]()
+* [https://regex101.com/](https://regex101.com/) 
+* [http://www.regexpal.com/](http://www.regexpal.com) = [http://www.regextester.com/](http://www.regextester.com/)
+* [http://regexr.com/](http://regexr.com/)
+* [http://myregexp.com/](http://myregexp.com/)
 
 ## Survey
 Click [here](https://forms.gle/GDg848Jk4sRr6LaN6). Thank you!
