@@ -71,7 +71,47 @@ What about a different postal code? Type your own postal code into the `TEST STR
 It won't detect this new postal code. Why? Because we've been _very_ specific, providing a regular expression that will match `A1A1A1` exactly. We can see this by opening the EXPLANATION PANEL to the right of the REGULAR EXPRESSION box.  
 
 
-### (2) Variable Pattern match
+#### Practice:
+
+Which postal code is from Alberta?
+
+	V5P 0L9
+ 	T4X 0A5
+ 	V2C 1E3
+	V5C 1L3
+	T5A 0A1
+	X4G 5D6
+
+<details>
+  <summary>Click to see the answer!</summary>
+  
+  ```T```
+  
+</details>
+
+### (2) Achor
+
+Which postal code is from Alberta?
+
+	V5P 0L9
+ 	T4X 0A5
+ 	V2C 1E3
+	V5C 1L3
+	T5A 0A1
+	X4G 5D6
+	V5C 1TC
+
+How to specify the "T" in the start?
+
+	^T
+
+ Other anchors:
+
+ 	$
+  	\b
+
+
+### (3) Variable Pattern match
 
 #### <1> Varible of strings
 Example 1. Postcode:
@@ -110,7 +150,7 @@ Which day(s) in this week have snowfall more than 5 mm?
 
 > "." here is a special character in regex syntax, which means any character. However, with "\" in front, it represents itself "." in this case.
 
-#### <3> Variable of string lengths
+#### <4> Variable of string lengths
 Annual snowfall amount (cm):
 
 	Washington	1640.0
@@ -125,7 +165,7 @@ Which state(s) have more than 100 cm snowfall?
 
 	[0-9]{3,4}\.[0-9]
 
-#### <4> Insertion or deletion
+#### <5> Insertion or deletion
 Postcode:
 
  	A1A 1A1
@@ -195,6 +235,7 @@ We can "group" the patterns and "capture" the matches.
 ### (1) Single group
 
 Print out the cities in US:
+
 	Edmonton, Canada
 	New York City, US
  	Washington, US
@@ -206,6 +247,7 @@ Print out the cities in US:
    	Seattle, US
 
 Code:
+
 	(.*),\sUS\b
 
 ### (2) Multiple groups
@@ -225,6 +267,13 @@ Code:
 	John got A in Maths, B in Arts, and C in Physics.
  	Emma got C in English, A in Chemistry, and B in History.
   	Tony got B in French, B in Maths, and D in Arts.
+
+<details>
+  <summary>Click to see the answer!</summary>
+  
+  ```^(\w{1,}) got (\w) in (\w+), (\w) in (\w+), and (\w) in (\w+)```
+  
+</details>
 
 # 5. Report
 Open [https://colab.research.google.com/]() in your browser, login with your google account.
