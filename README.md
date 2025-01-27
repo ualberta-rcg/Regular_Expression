@@ -323,8 +323,8 @@ Change date format from 01/24/2025 to 2025-01-24
 	output_text = re.sub(pattern, convert_to_mm, input_text)
 	print(output_text)
 
-## Survey
-Click [here](https://forms.gle/GDg848Jk4sRr6LaN6)
+
+## Practice
 
 ### Question 1:
 A start codon is the first codon in a messenger RNA (mRNA) transcript that is translated into a protein by a ribosome. The start codon is typically ATG, but can be TTG and GTG in _E.coli_. Use regular expression to find all start codon in the following DNA sequence.
@@ -338,6 +338,8 @@ Use python code and regular expression to change the author names:
 
 > Changed: T.J. Li
 
+## Survey
+Click [here](https://forms.gle/GDg848Jk4sRr6LaN6)
 
 ## Tutorials
 
