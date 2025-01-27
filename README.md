@@ -358,5 +358,5 @@ Use python code and regular expression to change the author names:
 * [http://myregexp.com/]()
 
 ## Survey
-Click [here](https://forms.gle/GDg848Jk4sRr6LaN6)
+Click [here](https://forms.gle/GDg848Jk4sRr6LaN6). Thank you!
 
