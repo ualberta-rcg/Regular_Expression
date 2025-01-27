@@ -89,7 +89,7 @@ Example 2. Grade:
 	Peppa Pig	C
 	Paw Patrol	A
  	
-Who got B+ or higher?
+Who got B or higher?
 
 	\s(A|B)\b
 
