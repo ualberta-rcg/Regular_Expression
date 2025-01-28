@@ -144,7 +144,7 @@ Daily snowfall amount (mm):
 	Fri	3.4
  	Sat	5.2
 
-Which day(s) in this week have snowfall more than 5 mm?
+Which day(s) in this week have more than 5 mm snowfall?
 
 	[5-9]\.[0-9]
 
@@ -161,9 +161,9 @@ Annual snowfall amount (cm):
 	Florida		0.2
  	Hawaii		0.0
 
-Which state(s) have more than 100 cm snowfall?
+Which state(s) have at least 10 cm snowfall?
 
-	[0-9]{3,4}\.[0-9]
+	[0-9]{2,4}\.[0-9]
 
 #### <5> Insertion or deletion
 Postcode:
@@ -329,8 +329,8 @@ You can start with:
  		
 <details>
   <summary>Fill the regular expression here. Click to see the answer!</summary>
-  
-	```	output=re.search(r"^(\w{1,}) got.*(\w) in Maths", grade)```
+
+  ```	output=re.search(r"^(\w{1,}) got.*(\w) in Maths", grade)```
   
 </details> 
 
@@ -413,7 +413,7 @@ Change "pattern" and "replacement" below with your answers:
 <details>
   <summary>Fill the regular expression here. Click to see the answer!</summary>
   
-	```	re.sub(r"^\((\d{3})\)",r"\1-","(604)123-1111")```
+  ```	re.sub(r"^\((\d{3})\)",r"\1-","(604)123-1111")```
   
 </details> 
 
